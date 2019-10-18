@@ -1,11 +1,11 @@
 package com.yamikrish.app.navigationDemo.ui.detail
 
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModel
-import android.arch.lifecycle.ViewModelProvider
-import android.arch.lifecycle.ViewModelProviders
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.yamikrish.app.navigationDemo.R
 import com.yamikrish.app.navigationDemo.model.Post
 import kotlinx.android.synthetic.main.detail_page.*
@@ -22,7 +22,7 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.detail_page)
-        val id = DetailActivityArgs.fromBundle(intent.extras).id
+        val id = DetailActivityArgs.fromBundle(intent.extras!!).id
         val factory = CustomViewModelFactory(id)
 
 

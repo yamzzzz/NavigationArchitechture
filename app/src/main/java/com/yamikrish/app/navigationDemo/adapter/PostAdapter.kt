@@ -1,7 +1,7 @@
 package com.yamikrish.app.navigationDemo.adapter
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -32,7 +32,7 @@ class PostAdapter (val context: Context, var data : List<Post>?) : RecyclerView.
         notifyDataSetChanged()
     }
 
-    inner class Holder(itemView: View?) : RecyclerView.ViewHolder(itemView){
+    inner class Holder(itemView: View) : RecyclerView.ViewHolder(itemView){
         fun bindItems(user: Post?){
             itemView.title.text =  user?.title
             itemView.description.text = user?.body

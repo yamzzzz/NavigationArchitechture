@@ -1,7 +1,7 @@
 package com.yamikrish.app.navigationDemo.repository
 
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.yamikrish.app.navigationDemo.helper.Utils
 import com.yamikrish.app.navigationDemo.model.Post
 import com.yamikrish.app.navigationDemo.model.User
