@@ -1,4 +1,4 @@
-package com.yamikrish.app.navigationDemo.ui.profile
+package com.yamikrish.app.navigationDemo.ui.bottomNavigation.profile
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
@@ -9,12 +9,6 @@ import com.yamikrish.app.navigationDemo.repository.APIService
  * Created by Yamini on 15/5/18.
  */
 
-class ProfileViewModel  : ViewModel() {
-    var post: LiveData<User>
-
-    init {
-        post =  APIService.getUser()
-    }
-
-    fun fetchUser() : LiveData<User> = post
+class ProfileViewModel : ViewModel() {
+    fun fetchUser(): LiveData<User> = APIService.getUser()
 }

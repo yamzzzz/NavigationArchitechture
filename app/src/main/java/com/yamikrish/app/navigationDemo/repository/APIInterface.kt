@@ -9,13 +9,13 @@ import retrofit2.http.Path
 /* 
  * Created by Yamini on 14/5/18.
  */
- 
-interface APIInterface{
+
+interface APIInterface {
     @GET("posts")
     fun getPosts(): Call<List<Post>>
 
     @GET("posts/{postId}")
-    fun getPostById(@Path(value = "postId", encoded = true)  postId : Int): Call<Post>
+    fun getPostById(@Path(value = "postId") postId: Int): Call<Post>
 
     @GET("users/1")
     fun getUser(): Call<User>
