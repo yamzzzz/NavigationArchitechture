@@ -8,11 +8,6 @@ plugins {
 
 ext {
     // Android
-    minimumSdkVersion = 23
-    targetSdkVersion = 30
-    versionCode = 1
-    versionName = "1.0"
-    androidCompileSdkVersion = 30
     testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
 
     okHttpVersion = '4.8.1'
